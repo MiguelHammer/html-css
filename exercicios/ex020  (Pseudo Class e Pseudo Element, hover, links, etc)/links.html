@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* 
+            #   = IDs
+            .   = Class
+            :   = Pseudo-Class
+            ::  = Pesedo-Elemento
+            >   = Children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{ /* Caso eu tenha visitado esse link, a cor vai ficar assim: */
+            color: rgb(87, 12, 12);
+        }
+        a:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        a:active{ /* Quando eu clicar, vai ficar amarelo */
+            color: yellow;
+        }
+        .gold::after{
+            content: ' [Gold]';
+            font-size: 10px;
+            color: rgba(128, 128, 128, 0.281);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li><a href="https://animesonlinehd.vip/hajime-no-ippo/" target="_blank">Animes</a></li>
+        <li><a class="gold" href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        <li><a href="https://megafilmeshd50.com/" target="_blank">Filmes e Séries</a></li>
+    </ul>
+</body>
+</html>

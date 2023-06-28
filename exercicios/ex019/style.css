@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    background-color: #bfd7ea8e;
+}
+main{
+    background-color: #91aec17a;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 2px 2px 4px #032236;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+h1{
+    color: #004F2D;
+    text-align: center;
+}
+/* ID */
+h1#principal{ /* ID se usa #, e não pode ter mais de um h1#principal no mesmo documento*/
+    background-color: #508CA4;
+    color: white;
+    font-size: 30px;
+}
+
+
+h2{
+    color: #0A8754;
+}
+
+/* CLASS */
+.basico{ /* As class ção os . e não precisa coloca h2.basico ... e as classe pode está em vários documento e elemento*/
+    color: #0A8754;
+}
+.inter{
+    color: rgba(189, 189, 7, 0.61);
+}
+.avançado{
+    color: rgba(255, 0, 0, 0.425);
+}
+

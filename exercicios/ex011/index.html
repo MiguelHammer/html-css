@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir em varios dispositivos, ou se estiver no computador, diminua ou aumenta a janela.</p>
+
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto padrão"> <!--quando o site diminuir, vai aparece a imagem menor de cima.-->
+    </picture>
+    
+    <h1>Audios</h1>
+    <p>Vamos ouvir musica</p>
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/zodiac.mp3" type="audio/mpeg"> <!--Pra isso que serve o SOURCE, caso o primeiro falha(para de toca a musica) o pular para o proximo SOURCE-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>

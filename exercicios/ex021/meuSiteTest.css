@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_1280.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* HEADER */
+    header{
+        background-color: rgba(0, 0, 0, 0.096);
+        position: relative;
+        padding: 10px 15px 10px 15px;
+    }
+    nav {
+        float: right;
+        margin: 0;
+    }
+    nav li {
+        display: inline-block;
+        margin: 0 0 0 15px;
+    }
+    header a {
+        text-transform: uppercase;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    nav a:hover{
+        color: orange;
+        text-decoration: underline;
+    }
+
+/* MAIN */
+    section#centro{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    }
+    #centro h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+/* FOOTER */
+    section#centrobraixo{
+    text-align: center;
+    }
+    section a{
+        text-decoration: none;
+        color: #ffffffa4;
+    }

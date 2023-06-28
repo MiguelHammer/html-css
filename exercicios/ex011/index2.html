@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+    
+    <style>
+        video{
+            position: absolute;
+        }
+    </style>
+    
+</head>
+<body>
+  <h1>Imagem dinamica</h1>
+    <p>Tente abrir em varios dispositivos, ou se estiver no computador, diminua ou aumenta a janela.</p>
+    <<iframe src="https://giphy.com/embed/LHZyixOnHwDDy" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1030px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="foto padrão">
+    </picture>
+
+    <audio preload="metadata" controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+    </audio> 
+
+    <video autoplay loop>
+        <source src="midia/Cafezino.webm" type="video/webm">
+    </video>
+</body>
+</html>
